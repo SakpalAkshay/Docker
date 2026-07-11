@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <text x="360" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Docker Architecture — Layered View</text>
+
+  <!-- Containers row -->
+  <rect x="60" y="55" width="170" height="90" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="145" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Container 1</text>
+  <text x="145" y="102" text-anchor="middle" font-size="12" fill="#1e40af">App 1</text>
+  <text x="145" y="122" text-anchor="middle" font-size="10" fill="#3b82f6">+ its dependencies</text>
+  <text x="145" y="137" text-anchor="middle" font-size="10" fill="#3b82f6">Node v14</text>
+
+  <rect x="275" y="55" width="170" height="90" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="360" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">Container 2</text>
+  <text x="360" y="102" text-anchor="middle" font-size="12" fill="#15803d">App 2</text>
+  <text x="360" y="122" text-anchor="middle" font-size="10" fill="#22c55e">+ its dependencies</text>
+  <text x="360" y="137" text-anchor="middle" font-size="10" fill="#22c55e">Node v16</text>
+
+  <rect x="490" y="55" width="170" height="90" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="575" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">Container 3</text>
+  <text x="575" y="102" text-anchor="middle" font-size="12" fill="#92400e">App 3</text>
+  <text x="575" y="122" text-anchor="middle" font-size="10" fill="#f59e0b">+ its dependencies</text>
+  <text x="575" y="137" text-anchor="middle" font-size="10" fill="#f59e0b">Python 3.12</text>
+
+  <text x="360" y="167" text-anchor="middle" font-size="11" font-style="italic" fill="#64748b">↑ Each is ISOLATED — App1 cannot see App2 ↑</text>
+
+  <!-- Docker Engine -->
+  <rect x="60" y="185" width="600" height="60" rx="8" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  <text x="360" y="212" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">DOCKER ENGINE</text>
+  <text x="360" y="232" text-anchor="middle" font-size="11" fill="#e0f2fe">Creates &amp; manages containers</text>
+
+  <!-- OS -->
+  <rect x="60" y="265" width="600" height="55" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="360" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">OPERATING SYSTEM</text>
+  <text x="360" y="309" text-anchor="middle" font-size="11" fill="#64748b">Linux / Windows / macOS</text>
+
+  <!-- Hardware -->
+  <rect x="60" y="340" width="600" height="55" rx="8" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+  <text x="360" y="365" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">HARDWARE / INFRASTRUCTURE</text>
+  <text x="360" y="384" text-anchor="middle" font-size="11" fill="#475569">Server · Laptop · Cloud (AWS, Azure, GCP)</text>
+</svg>
